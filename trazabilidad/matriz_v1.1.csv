@@ -1,0 +1,9 @@
+Requisito,Casos de uso,Clases,Pruebas,Estado,Cambio
+REQ-F-001,CU-001,CLS-Usuario,"PRB-001, PRB-002",Cubierto,
+REQ-F-002,CU-002,"CLS-Libro, CLS-Catalogo",PRB-003,Cubierto,
+REQ-F-003,CU-003,"CLS-Prestamo, CLS-Libro, CLS-Usuario","PRB-004, PRB-005, PRB-012",Cubierto,Modificado CR-001
+REQ-F-004,CU-004,"CLS-Prestamo, CLS-Libro, CLS-Multa","PRB-006, PRB-010, PRB-011",Cubierto,Modificado CR-001
+REQ-F-005,CU-005,"CLS-Reserva, CLS-Libro",PRB-007,Cubierto,
+REQ-F-006,CU-006,"CLS-Notificador, CLS-Prestamo",PRB-008,Cubierto,
+REQ-F-007,CU-007,"CLS-Multa, CLS-Usuario","PRB-010, PRB-011, PRB-012",Cubierto,Nuevo CR-001
+REQ-N-001,transversal,CLS-Catalogo,PRB-009,Cubierto,

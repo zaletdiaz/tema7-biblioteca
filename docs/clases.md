@@ -1,18 +1,15 @@
-# Clases del sistema – v1.0
+# Clases del sistema – v1.1
 
-| Clase | Atributos principales | Métodos principales |
-|---|---|---|
-| CLS-Usuario | idUsuario, nombre, tipo, correo | registrar() |
-| CLS-Libro | codigo, titulo, autor, estado | buscar(), cambiarEstado() |
-| CLS-Catalogo | libros | buscarPorTitulo(), buscarPorAutor(), buscarPorCodigo() |
-| CLS-Prestamo | idPrestamo, fechaPrestamo, fechaVencimiento, fechaDevolucion | registrar(), registrarDevolucion() |
-| CLS-Reserva | idReserva, fechaReserva, estado | reservar(), cancelar() |
-| CLS-Notificador | medio | enviarAviso() |
+| Clase | Atributos principales | Métodos principales | Cambio |
+|---|---|---|---|
+| CLS-Usuario | idUsuario, nombre, tipo, correo | registrar(), **tieneMultaPendiente()** | Modificada |
+| CLS-Libro | codigo, titulo, autor, estado | buscar(), cambiarEstado() | |
+| CLS-Catalogo | libros | buscarPorTitulo(), buscarPorAutor(), buscarPorCodigo() | |
+| CLS-Prestamo | idPrestamo, fechaPrestamo, fechaVencimiento, fechaDevolucion | registrar(), registrarDevolucion(), **calcularMulta()** | Modificada |
+| CLS-Reserva | idReserva, fechaReserva, estado | reservar(), cancelar() | |
+| CLS-Notificador | medio | enviarAviso() | |
+| **CLS-Multa** | idMulta, monto, diasRetraso, estado, fechaPago | generar(), registrarPago() | **Nueva** |
 
-## Relaciones
-- Usuario 1 — 0..* Prestamo
-- Libro 1 — 0..* Prestamo
-- Usuario 1 — 0..* Reserva
-- Libro 1 — 0..* Reserva
-- Catalogo 1 — 0..* Libro
-- Notificador usa Prestamo
+## Relaciones nuevas
+- Prestamo 1 — 0..1 Multa
+- Usuario 1 — 0..* Multa
