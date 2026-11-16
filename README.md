@@ -2,7 +2,7 @@
 
 Laboratorio Tema 7 – Gestión del Cambio y Trazabilidad de Requisitos
 Curso: Modelado y Desarrollo de Aplicaciones (CIIN1322P)
-Estudiante: [Apellido, Nombre]
+Estudiante: Zalet Stefany Diaz Anticona
 
 ## Versión actual: v1.1 (incluye CR-001: multa por devolución tardía)
 
